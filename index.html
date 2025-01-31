@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Age-Restricted Website</title>
     <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Age-Restricted Website | Home</title>
 </head>
 <body>
 
-<input id="age-input">
-<button onclick="checkAge()"></button>
+<label for="age-input">How old are you?: </label><input id="age-input">
+<button onclick="checkAge()">Verify</button>
+
 <div id="main-content">
-    <img src="" alt="A picture of me.">
+    <img src="./src/pigeon.jpeg" alt="A picture of me.">
     <p>I am standing next to a pigeon.</p>
+</div>
+
+<div id="error-content">
+    <p id="error-message"></p>
 </div>
 
 <script src="script.js"></script>
